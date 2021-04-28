@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 if (os.path.exists("data.html") != True ):
     page = requests.get("https://www.brainyquote.com/topics/random").text
     open("data.html","w").write(page);
-    print("[+] Downloafding");
+    print("[+] Downloading");
 
 
 page = open("data.html","r").read()
